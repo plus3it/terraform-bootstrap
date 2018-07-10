@@ -82,11 +82,11 @@ if [ $success -eq 1 ]; then
 
   echo "Terraform was installed at $install_location/terraform."
 
-  terraform -v
   exit 0
 
 else
   # wasn't installed
   echo "ERROR: Terraform was not installed."
+
   exit 1
 fi
