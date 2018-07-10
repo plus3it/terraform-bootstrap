@@ -1,0 +1,8 @@
+language: python
+python: bash
+
+install:
+  - ./install.sh
+
+script:
+  - terraform --version
