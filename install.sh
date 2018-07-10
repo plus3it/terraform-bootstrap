@@ -24,7 +24,7 @@ case $platform in
   *)                              platform=linux;;
 esac
 
-echo "Your platform is $platform"
+echo "Your platform is $platform ($(uname))"
 
 # get the processor ----------------------------------
 processor=$(uname -m)
@@ -34,7 +34,7 @@ case "$processor" in
   *           )   processor=386;;
 esac
 
-echo "Your processor is $processor"
+echo "Your processor is $processor ($(uname -m))"
 
 # download -------------------------------------------
 echo "Downloading Terraform from HashiCorp..."
