@@ -9,6 +9,7 @@ Installing is as simple as this:
 
 ```shell
 $ git clone https://github.com/YakDriver/terraform-bootstrap.git
+$ cd terraform-bootstrap
 $ chmod +x install.sh
 $ ./install.sh
 ```
