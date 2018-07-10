@@ -7,7 +7,7 @@ echo "------------------------------------------------"
 # get the latest version -----------------------------
 latest_github_release=https://github.com/hashicorp/terraform/releases/latest
 
-latest_url=$(curl -Ls -o /dev/null -w %{url_effective} $latest_github_release)
+latest_url=$(curl -LIs -o /dev/null -w %{url_effective} $latest_github_release)
 latest_version=${latest_url##*/}
 
 if [[ $latest_version == v* ]]; then
