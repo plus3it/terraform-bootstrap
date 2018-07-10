@@ -22,6 +22,7 @@ remote: Counting objects: 7, done.
 remote: Compressing objects: 100% (7/7), done.
 remote: Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (7/7), done.
+$ cd terraform-bootstrap
 $ chmod +x install.sh
 $ ./install.sh
 Terraform Bootstrap
@@ -29,8 +30,8 @@ https://github.com/YakDriver/terraform-bootstrap
 ------------------------------------------------
 Latest Terraform version is 0.11.7
 Platform specific download exists
-Your platform is darwin
-Your processor is amd64
+Your platform is darwin (Darwin)
+Your processor is amd64 (x86_64)
 Downloading Terraform from HashiCorp...
 Installing Terraform...
 Archive:  terraform.zip
