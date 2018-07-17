@@ -5,14 +5,15 @@ Downloads and installs Terraform on Linux/Mac.
 This script should install the latest version of Terraform specific to your Linux-like / Mac system. If it doesn't work, 
 please open an issue or, better yet, a pull request with the fix.
 
-Installing is as simple as this:
+Installing Terraform's latest version is simple.
 
 ```shell
 $ git clone https://github.com/plus3it/terraform-bootstrap.git
-$ cd terraform-bootstrap
-$ chmod +x install.sh
-$ ./install.sh
+$ cd terraform-bootstrap && chmod +x install.sh && ./install.sh
 ```
+
+The script will attempts multiple install locations. If you want the
+broadest installation, you can `sudo` the script.
 
 This is the typical output you might expect.
 ```shell
