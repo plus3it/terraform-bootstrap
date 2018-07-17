@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Terraform Bootstrap"
-echo "https://github.com/YakDriver/terraform-bootstrap"
+echo "https://github.com/plus3it/terraform-bootstrap"
 echo "------------------------------------------------"
 
 # get the latest version -----------------------------
