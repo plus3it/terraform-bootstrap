@@ -8,7 +8,7 @@ please open an issue or, better yet, a pull request with the fix.
 Installing is as simple as this:
 
 ```shell
-$ git clone https://github.com/YakDriver/terraform-bootstrap.git
+$ git clone https://github.com/plus3it/terraform-bootstrap.git
 $ cd terraform-bootstrap
 $ chmod +x install.sh
 $ ./install.sh
@@ -16,7 +16,7 @@ $ ./install.sh
 
 This is the typical output you might expect.
 ```shell
-$ git clone https://github.com/YakDriver/terraform-bootstrap.git
+$ git clone https://github.com/plus3it/terraform-bootstrap.git
 Cloning into 'terraform-bootstrap'...
 remote: Counting objects: 7, done.
 remote: Compressing objects: 100% (7/7), done.
@@ -26,7 +26,7 @@ $ cd terraform-bootstrap
 $ chmod +x install.sh
 $ ./install.sh
 Terraform Bootstrap
-https://github.com/YakDriver/terraform-bootstrap
+https://github.com/plus3it/terraform-bootstrap
 ------------------------------------------------
 Latest Terraform version is 0.11.7
 Platform specific download exists
