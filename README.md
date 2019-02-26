@@ -2,8 +2,7 @@
 
 Downloads and installs Terraform on Linux/Mac.
 
-This script should install the latest version of Terraform specific to your Linux-like / Mac system. If it doesn't work, 
-please open an issue or, better yet, a pull request with the fix.
+This script should install the latest version of Terraform specific to your Linux-like / Mac system. If it doesn't work, please open an issue or, better yet, a pull request with the fix.
 
 Installing Terraform's latest version is simple.
 

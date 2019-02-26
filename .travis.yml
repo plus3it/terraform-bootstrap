@@ -1,7 +1,11 @@
 language: minimal
-
 install:
   - ./install.sh
-
 script:
   - terraform --version
+
+jobs:
+  include:
+    - dist: trusty
+    - dist: xenial
+    - os: osx
