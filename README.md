@@ -1,3 +1,5 @@
+[![pullreminders](https://pullreminders.com/badge.svg)](https://pullreminders.com?ref=badge)
+
 # terraform-bootstrap
 
 Downloads and installs Terraform on Linux/Mac.
