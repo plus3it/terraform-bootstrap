@@ -1,10 +1,28 @@
 #!/bin/bash
 
-version=0.1.1
+version=0.2.0
+
+usage()
+{
+    echo "usage: install.sh [[-v version-to-install ] | [-h]]"
+}
 
 echo "Terraform Bootstrap v${version}"
 echo "https://github.com/plus3it/terraform-bootstrap"
 echo "------------------------------------------------"
+
+while [ "$1" != "" ]; do
+  case $1 in
+    -v | --version )      shift
+                          terraform_version=$1
+                          ;;
+    -h | --help )         usage
+                          exit 1
+                          ;;
+    * )                   ;;
+  esac
+  shift
+done
 
 # get the platform -----------------------------------
 platform=$(uname | tr '[:upper:]' '[:lower:]')
@@ -78,8 +96,14 @@ fi
 echo "$(jq --version) available"
 
 # get terraform version ------------------------------
-terraform_version=$(curl -s https://checkpoint-api.hashicorp.com/v1/check/terraform | jq -r -M '.current_version')
-echo "Latest Terraform version is ${terraform_version}"
+latest_version=$(curl -s https://checkpoint-api.hashicorp.com/v1/check/terraform | jq -r -M '.current_version')
+echo "Latest Terraform version is ${latest_version}"
+
+if [ "$terraform_version" = "" ]; then
+  terraform_version=$latest_version
+fi
+echo "Installing version ${terraform_version}"
+
 
 if [ "${jq_self_install}" = true ] ; then
   rm -f jq
