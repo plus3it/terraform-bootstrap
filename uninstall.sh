@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=0.1.1
+version=0.2.0
 
 echo "Terraform Uninstall v${version}"
 echo "https://github.com/plus3it/terraform-bootstrap"
