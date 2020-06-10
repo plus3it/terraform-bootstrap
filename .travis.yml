@@ -6,6 +6,6 @@ script:
 
 jobs:
   include:
-    - dist: trusty
+    - dist: bionic
     - dist: xenial
     - os: osx
